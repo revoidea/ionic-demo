@@ -1,17 +1,41 @@
+<!--头部-->
 <ion-header [translucent]="true">
+  <!--ion-toolbar 浮动导航-->
   <ion-toolbar>
+    <!--标题-->
     <ion-title>
       Tab 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!--内容-->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  内容：
+  <!-- ion-header ，ion-content，on-footer处于同一个级别。
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  ion-toolbar放在ion-header，ion-footer里面充当悬浮导航
+
+  ion-title，ion-buttons，放在ion-toolbar里面，他们处于同一级 -->
 </ion-content>
+
+<!--底部-->
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+
+    <!--按钮组-->
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="start" name="add"></ion-icon>
+        Click me
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="start" name="add"></ion-icon>
+        Click me
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

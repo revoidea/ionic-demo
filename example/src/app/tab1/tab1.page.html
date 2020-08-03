@@ -1,5 +1,5 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header  [translucent]="true">
+  <ion-toolbar >
     <ion-title>
       Tab 1
     </ion-title>
@@ -7,10 +7,39 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+   <ion-button  [routerLink]="['/news']"  color="success" >
+     跳转到新闻界面
+   </ion-button>
+  
+   <br><br>
+   <h3>组件1---按钮</h3>
+   
+   <!-- color 属性：设置按钮的背景颜色 -->
+   <ion-button color="primary"> color(primary)</ion-button>
+   <ion-button color="tertiary"> color(tertiary) </ion-button>
+   <!--expand 属性：设置按钮的宽度(block,full)-->
+   <ion-button  expand="block"> expand(block)</ion-button>
+   <ion-button  expand="full"> expand(full)</ion-button>
+   <!--fill 属性：设置按钮的背景填充(clear,outline,solid)-->
+   <ion-button  fill="clear"> fill(clear)</ion-button>
+   <ion-button  fill="outline"> fill(outline)</ion-button>
+   <ion-button  fill="solid"> fill(solid)</ion-button>
+   <!--size 属性：设置按钮的大小（samll,default,targe） --不生效 -->
+   <ion-button  size="samll"> size(samll)</ion-button>
+   <ion-button  size="default"> size(default)</ion-button>
+   <ion-button  size="targe"> size(targe)</ion-button>
+   <!--mode 属性：决定使用哪种平台样式（ios,md(android)）-->
+   <ion-button  mode="ios"> mode(苹果)</ion-button>
+   <ion-button  mode="md"> mode(安卓)</ion-button>
+   <!--按钮结合图标-->
+   <br>
+   <ion-button (click)="onClick()" >
+      <!--slot：控制图标的位置：icon-only，start，end-->
+     <ion-icon slot="icon-only" name="add"></ion-icon>
+   </ion-button>
+
+  <br><br>
+ 
+ 
+
 </ion-content>

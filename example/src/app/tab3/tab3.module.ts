@@ -8,11 +8,14 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab3PageRoutingModule } from './tab3-routing.module'
 
+import { ListModule } from '../modules/list/list.module'
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
+    ListModule,
     ExploreContainerComponentModule,
     RouterModule.forChild([{ path: '', component: Tab3Page }]),
     Tab3PageRoutingModule,
