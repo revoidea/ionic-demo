@@ -76,6 +76,16 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
+//自定义颜色
+.ion-color-favorite {
+  --ion-color-favorite: #69bb7b;
+  --ion-color-favorite-rgb: 105,187,123;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255,255,255;
+  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-tint: #78c288;
+}
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
