@@ -78,13 +78,28 @@
 
 //自定义颜色
 .ion-color-favorite {
-  --ion-color-favorite: #69bb7b;
-  --ion-color-favorite-rgb: 105,187,123;
-  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite: #69bb7b;    //基本颜色
+  --ion-color-favorite-rgb: 105,187,123;//rgb
+  --ion-color-favorite-contrast: #ffffff;//对比颜色
   --ion-color-favorite-contrast-rgb: 255,255,255;
-  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-shade: #5ca56c;//阴影颜色
   --ion-color-favorite-tint: #78c288;
 }
+
+
+//自定义按钮样式(官方提供的)
+ion-button {
+  // --color:red;
+  // --background:blue;
+}
+
+
+//自定义修改底部
+ion-tab-bar {
+  --background : blue;
+  --color:#78c288;
+  --border:1px solid red;
+} 
 
 @media (prefers-color-scheme: dark) {
   /*
